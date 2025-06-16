@@ -1,0 +1,12 @@
+p.mass = 4.5;
+p.J = diag([0.026,0.112,0.075]);
+p.g = 9.81;
+p.mu = 1.6;       % friction coefficient
+p.z0 = 0.2;     % nominal COM height
+p.pf34 = [[0.15;0.094;0],[0.15;-0.094;0],[-0.15;0.094;0],[-0.15;-0.094;0]];
+
+% desired trajectory
+p.acc_d = 1.5;
+p.vel_d = [0.8;0];
+p.yaw_d = 0;
+
